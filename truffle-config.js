@@ -3,7 +3,7 @@ const fs = require('fs');
 const provider = require('@truffle/hdwallet-provider');
 const secrets = JSON.parse(fs.readFileSync('.secrets.json').toString().trim());
 module.exports = {
-  contracts_build_directory: path.join(__dirname, 'backend/src/config'),
+  contracts_build_directory: path.join(__dirname, 'frontend/src/contracts'),
 
   networks: {
     development: {
